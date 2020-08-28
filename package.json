@@ -1,6 +1,10 @@
 {
   "name": "said-soria-insaite",
   "version": "0.0.0",
+  "engines": {
+    "npm": "6.14.4",
+    "node": "10.16.3"
+  },
   "scripts": {
     "ng": "ng",
     "start": "node server.js",
@@ -9,7 +13,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "dev": "ng serve -o",
-    "postinstall": "ng build --prod"
+    "postinstall": "ng build"
   },
   "private": true,
   "dependencies": {
