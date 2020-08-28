@@ -1,0 +1,21 @@
+<br>
+<h4>{{ title }} Table</h4>
+<table class="table" *ngIf="timeSeries && tableTitles[0]">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">Date</th>
+            <ng-container *ngFor="let item of getKeys(tableTitles[0])">
+                <th>{{ item }}</th>
+            </ng-container>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let date of timeKeys">
+            <th scope="row">{{ date }}</th>
+            <ng-container *ngFor="let item of getKeys(timeSeries[date])">
+                <td>{{ timeSeries[date][item] }}</td>
+            </ng-container>
+        </tr>
+    </tbody>
+</table>
+<br>
