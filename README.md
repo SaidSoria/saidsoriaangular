@@ -9,3 +9,4 @@
 - The table component displays the API data in a table.
 - This project uses [Bootstrap](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
 - Charts were made with [Chart.js](https://www.chartjs.org/docs/latest/)
+- [DEMO](https://said-insaite.herokuapp.com)
